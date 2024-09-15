@@ -1,15 +1,112 @@
-*{
+body {
     margin: 0;
-    padding:0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    color: #F1C40F; /* Updated golden color for better contrast */
+    background: linear-gradient(to right, #000000 0%, #333333 100%); /* Black tinted gradient from left to right */
 }
 
-.container h1{
-    margin-bottom: 30px;
-    border-bottom: 3px solid #7f7f7f;
-    text-align: center;
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
 }
-.container{
-    width: 700px;
-    margin :40px auto;
-    border:3px solid #000;
+
+header {
+    background: #000000;
+    color: #F1C40F; /* Updated golden color for header text */
+    text-align: center;
+    padding: 50px 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 3em;
+}
+
+header p {
+    font-size: 1.5em;
+    margin: 0;
+}
+
+section {
+    padding: 40px 20px;
+}
+
+h2 {
+    border-bottom: 2px solid #F1C40F; /* Updated golden color for section borders */
+    padding-bottom: 10px;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.about p, .projects p, .contact p {
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+.about ul, .contact ul {
+    list-style: none;
+    padding: 0;
+}
+
+.about li, .contact li {
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+}
+
+.about svg, .contact svg {
+    margin-right: 10px;
+}
+
+.projects .project {
+    margin-bottom: 30px;
+    padding: 20px;
+    background: #222222; /* Darker background for projects to match theme */
+    border-radius: 8px;
+}
+
+.projects .project h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.projects .project p {
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+.contact a {
+    color: #F1C40F; /* Updated golden color for contact links */
+    text-decoration: none;
+}
+
+.contact a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background: #000000;
+    color: #F1C40F; /* Updated golden color for footer text */
+    text-align: center;
+    padding: 20px;
+}
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.5em;
+    }
+
+    header p {
+        font-size: 1.2em;
+    }
+
+    h2 {
+        font-size: 2em;
+    }
+
+    .about p, .projects p {
+        font-size: 1em;
+    }
 }
